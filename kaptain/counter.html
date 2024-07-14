@@ -1,0 +1,26 @@
+<body>
+    <h1>Hello</h1>
+    <ol id="loop"></ol>
+</body>
+
+<script>
+    function countToX(x) {
+    let i = 1;
+    while (i <= x) {
+        console.log(i)
+        i = i+1
+    }
+}
+
+function countToX2(x) {
+
+    const element = document.getElementById('loop');
+      
+      // Add content to the element's inner HTML
+      for (let i = 0; i <= x; i++) {
+          console.log(i)
+          element.innerHTML += '<li>' + i.toString() + '</li>';
+        }
+}
+countToX2(50)
+</script>
